@@ -1,0 +1,476 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Inter;
+}
+
+#navbar {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    position: fixed;
+    background: white;
+    z-index: 99;
+}
+
+#navbarContainer {
+    width: 20%;
+    height: 100%;
+}
+
+#logo {
+    width: 60%;
+    height: 100%;
+    padding-top: 2%;
+    padding-left: 8%;
+}
+
+#DropDown {
+    width: 50%;
+    height: 100%;
+    align-content: center;
+}
+
+#Dropdownbtn ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    transition: 5s ease-in;
+
+}
+
+#Dropdownbtn ul li button {
+    border: none;
+    text-decoration: none;
+    font-size: 150%;
+    font-weight: 600;
+    background: none;
+    position: relative;
+    display: inline-block;
+}
+
+#Dropdownbtn ul li:hover #Dropdowncontant {
+    display: block;
+    cursor: pointer;
+}
+
+#Dropdowncontant {
+    position: absolute;
+    top: 7%;
+    display: none;
+}
+
+#Dropdowncontant ul {
+    display: block;
+    width: 100%;
+    height: 40%;
+    background-color: white;
+    border-radius: 8%;
+    margin-top: 17%;
+    justify-content: space-evenly;
+    border: #5C5C5C;
+}
+
+#Dropdowncontant ul li {
+    color: #5C5C5C;
+    font-size: 112.5%;
+    line-height: 23px;
+    padding-left: 5%;
+}
+
+.Solutions {
+    font-size: 120%;
+    font-weight: bold;
+}
+
+#Dropdowncontant ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+#Dropdowncontant ul li p {
+    font-size: 110%;
+}
+
+#Dropdowncontant .security {
+    padding-top: 10%;
+    height: auto;
+
+}
+
+.security {
+    font-size: 120%;
+    color: black;
+    font-weight: 500;
+}
+
+.Learning {
+    font-size: 110%;
+    font-weight: bold;
+    margin-top: 5%;
+    justify-content: space-between;
+}
+
+#Banner {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    padding-top: 8%;
+}
+
+#BannerText {
+    width: 90%;
+    height: 30%;
+    text-align: center;
+
+}
+
+#BannerText h2 {
+    font-size: 400%;
+    padding-top: 12%;
+    font-weight: 900;
+    line-height: 54px;
+}
+
+#BannerText h2 span {
+    color: #0D6EFD;
+}
+
+#BannerText p {
+    font-size: 150%;
+    padding-top: 3%;
+    letter-spacing: 2px;
+    padding-left: 3%;
+    color: #5C5C5C;
+    margin-left: 2%;
+    width: 100%;
+}
+
+#BannerText p span {
+    color: DodgerBlue;
+}
+
+#BannerImg {
+    width: 50%;
+    height: 30%;
+}
+
+#launch {
+    width: 400px;
+    padding-left: 20px;
+}
+
+#About {
+    width: 100%;
+    height: 30%;
+    background-color: #0E99E1;
+    text-align: center;
+    color: white;
+}
+
+#About h1 {
+    font-size: 400%;
+    padding-top: 2%;
+    font-weight: 800;
+    line-height: 54px;
+}
+
+
+#About p {
+    font-size: 180%;
+    padding-top: 1%;
+    letter-spacing: 1px;
+    line-height: 24px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.carousel {
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    height: 50%;
+    position: relative;
+    padding-top: 2%;
+
+}
+
+.slide {
+    width: 95%;
+    height: 80%;
+    align-content: center;
+    display: none;
+    position: absolute;
+    z-index: 9;
+    margin-left: 2.5%;
+}
+
+#image {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    top: 0%;
+    left: 0%;
+}
+
+.active {
+    display: block;
+    color: white;
+    font-weight: 900;
+    font-size: 150%;
+}
+
+
+#transForm {
+    width: 100%;
+    height: 35%;
+    text-align: center;
+    background-color: #0E99E1;
+    color: white;
+    align-content: center;
+}
+
+
+
+#transForm h1 {
+    font-weight: 800;
+    font-size: 400%;
+    padding-top: 1%;
+    line-height: 54px;
+}
+
+#transForm p {
+    width: 80%;
+    font-size: 180%;
+    margin-left: 10%;
+    padding-top: 1%;
+}
+
+#footer {
+    width: 100%;
+    height: 80%;
+    background-color: aliceblue;
+    display: flex;
+    padding-top: 6%;
+    justify-content: space-evenly;
+}
+
+#footerLogo {
+    width: 20%;
+}
+
+#logoes {
+    width: 100%;
+    height: 100%;
+}
+
+#contact {
+    width: 20%;
+    height: auto;
+    text-align: center;
+    padding-top: 2%;
+}
+
+#contact h4 {
+    font-size: 30px;
+}
+
+#contact a {
+    color: black;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+#contactdeatails {
+    margin-top: 10%;
+}
+
+#socials {
+    margin-top: 10%;
+}
+
+#socials a {
+    font-size: 2.5rem;
+    padding-left: 15px;
+}
+
+#socials a :hover {
+    color: #0E99E1
+}
+
+#servies {
+    width: 20%;
+    height: auto;
+    display: block;
+    text-align: center;
+    padding-top: 2%;
+}
+
+#servies h4 {
+    font-size: 30px;
+}
+
+#servies a {
+    display: block;
+    padding-top: 2%;
+    margin-top: 2%;
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+#formDiv1 {
+    width: 20%;
+    height: auto;
+    display: block;
+}
+
+
+#formDiv2 {
+    width: 100%;
+    height: 80%;
+    background-color: white;
+    justify-items: space-between;
+    border-radius: 20px;
+    display: block;
+    padding-top: 35px;
+    padding-left: 15px;
+    font-size: 13px;
+}
+
+
+#formDiv2 label {
+    color: DodgerBlue;
+    padding-top: 20px;
+
+}
+
+#formDiv2 input {
+    width: 90%;
+    height: 28px;
+    margin-top: 6px;
+    background-color: aliceblue;
+    border-radius: 15px;
+    border: none;
+}
+
+#formDiv2 button {
+    width: 35%;
+    height: 25px;
+    margin-top: 15px;
+    border-radius: 15px;
+    color: rgb(68, 68, 240);
+    font-weight: bold;
+    background-color: white;
+    transition: 0.2s ease-in;
+}
+
+#formDiv2 button:hover {
+    background-color: rgb(68, 68, 240);
+    color: white;
+}
+
+#footerText {
+    width: 100%;
+    height: 10%;
+    background-color: #0E99E1;
+    text-align: center;
+    color: white;
+    font-size: 180%;
+    align-content: center;
+}
+
+/* Responsive  start from here*/
+@media only screen and (max-width: 780px) {
+    #navbarContainer {
+        width: 100%;
+        height: 80%;
+        text-align: center;
+    }
+
+    #logo {
+        width: 60%;
+        height: 110%;
+
+    }
+
+
+
+    #DropDown {
+        display: none;
+    }
+
+    #Banner {
+        width: 100%;
+        height: 250%;
+        display: block;
+        padding-top: 20%;
+
+    }
+
+    #BannerText {
+        width: 100%;
+        height: 40%;
+        text-align: center;
+    }
+
+    #BannerImg {
+        width: 100%;
+        height: 30%;
+    }
+
+    #About {
+        width: 120%;
+        height: auto;
+        font-size: 80%;
+    }
+
+    #transForm {
+        width: 120%;
+        height: auto;
+        font-size: 80%;
+    }
+
+    #footer {
+        display: block;
+        width: 100%;
+        height: 120%;
+    }
+
+    #footerLogo {
+        width: 120%;
+    }
+
+    #contact {
+        width: 120%;
+    }
+
+    #servies {
+        width: 100%;
+    }
+
+    #formDiv1 {
+        width: 120%;
+    }
+
+    #formDiv2 {
+        width: 90%;
+        height: 30%;
+        margin-left: 5%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+}
